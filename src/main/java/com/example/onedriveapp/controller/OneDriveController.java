@@ -15,7 +15,7 @@ public class OneDriveController {
     private final OneDriveService oneDriveService;
 
     @ApiOperation(
-            value = "Pobranie katalogu oraz pliku po nazwie"
+            value = "Pobranie katalogu głównego lub pliku po nazwie"
     )
     @ApiResponses(value = {
             @ApiResponse(code = 204, message = "Plik pobrany"),
