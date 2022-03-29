@@ -8,14 +8,14 @@ import org.springframework.web.bind.annotation.*;
 
 @Api(tags = "Pobieranie plików z OneDrive")
 @RestController
-@RequestMapping(value = "/internal/api/v1/dfg/eti/")
+@RequestMapping(value = "/one-drive")
 @RequiredArgsConstructor
 public class OneDriveController {
 
     private final OneDriveService oneDriveService;
 
     @ApiOperation(
-            value = "Pobranie pliku po nazwie"
+            value = "Pobranie katalogu oraz pliku po nazwie"
     )
     @ApiResponses(value = {
             @ApiResponse(code = 204, message = "Plik pobrany"),
